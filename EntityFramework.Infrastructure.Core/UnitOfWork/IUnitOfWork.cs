@@ -1,0 +1,16 @@
+﻿using EntityFramework.Infrastructure.Core.Repository;
+using System.Data.Common;
+
+namespace EntityFramework.Infrastructure.Core.UnitOfWork
+{
+    public interface IUnitOfWork
+    {
+        IRepository<TEntity> Repository<TEntity>() where TEntity : class;
+        IEnumerable<T> SqlQuery<T>(string query, Func<DbDataReader, T> map, params object[] parameters);
+        void BeginTransaction();
+        void Commit();
+        void RollBack();
+        bool Save();
+        Task<bool> SaveAsync();
+    }
+}
