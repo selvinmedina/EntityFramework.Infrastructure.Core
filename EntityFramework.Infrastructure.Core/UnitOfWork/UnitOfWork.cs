@@ -1,10 +1,10 @@
-﻿using EntityFramework.Infrastructure.Core.Repository;
+﻿using SelvinMedina.EntityFramework.Infrastructure.Core.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
 using System.Data.Common;
 
-namespace EntityFramework.Infrastructure.Core.UnitOfWork
+namespace SelvinMedina.EntityFramework.Infrastructure.Core.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace EntityFramework.Infrastructure.Core.Repository
+namespace SelvinMedina.EntityFramework.Infrastructure.Core.Repository
 {
     public interface IRepository<TEntity> where TEntity : class
     {

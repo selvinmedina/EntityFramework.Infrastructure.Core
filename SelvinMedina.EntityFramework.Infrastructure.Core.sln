@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework.Infrastructure.Core", "EntityFramework.Infrastructure.Core\EntityFramework.Infrastructure.Core.csproj", "{A15216B8-F54D-4666-B4DD-BF4F59E88650}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelvinMedina.EntityFramework.Infrastructure.Core", "EntityFramework.Infrastructure.Core\SelvinMedina.EntityFramework.Infrastructure.Core.csproj", "{A15216B8-F54D-4666-B4DD-BF4F59E88650}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace EntityFramework.Infrastructure.Core.Repository
+namespace SelvinMedina.EntityFramework.Infrastructure.Core.Repository
 {
     public class EntityRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
