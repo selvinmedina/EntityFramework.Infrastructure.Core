@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace SelvinMedina.EntityFramework.Infrastructure.Core.Extensions
+namespace EntityFramework.Infrastructure.Core.Extensions
 {
     public static class ModelBuilderExtensions
     {

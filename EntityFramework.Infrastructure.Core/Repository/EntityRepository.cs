@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace SelvinMedina.EntityFramework.Infrastructure.Core.Repository
+namespace EntityFramework.Infrastructure.Core.Repository
 {
     public class EntityRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
@@ -24,9 +24,16 @@ namespace SelvinMedina.EntityFramework.Infrastructure.Core.Repository
             _dbSet.AddRange(entities);
         }
 
-        public IQueryable<TEntity> AsQueryable()
+        public IQueryable<TEntity> AsQueryable(bool disableTracking = true)
         {
-            return _dbSet.AsQueryable();
+            var query = _dbSet.AsQueryable();
+
+            if (disableTracking)
+            {
+                query = query.AsNoTracking();
+            }
+
+            return query;
         }
 
         public bool Delete(int id)

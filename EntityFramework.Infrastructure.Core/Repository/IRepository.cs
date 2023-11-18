@@ -1,10 +1,10 @@
 ﻿using System.Linq.Expressions;
 
-namespace SelvinMedina.EntityFramework.Infrastructure.Core.Repository
+namespace EntityFramework.Infrastructure.Core.Repository
 {
     public interface IRepository<TEntity> where TEntity : class
     {
-        IQueryable<TEntity> AsQueryable();
+        IQueryable<TEntity> AsQueryable(bool disableTracking = true);
         IQueryable<TEntity> FromSql(string sql, params object[] parameters);
 
         IEnumerable<TEntity>? Get();
